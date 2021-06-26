@@ -48,4 +48,4 @@
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
 ##  live link
-    [https://stephane-evrard.github.io](https://stephane-evrard.github.io/IP3_DelaniStudio/)
+    [https://stephane-evrard.github.io](https://stephane-evrard.github.io/IP_pizzaWebsite/)
