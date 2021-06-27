@@ -428,7 +428,7 @@ header .navbar a:hover {
 }
 
 .order .row form .inputBox input,
-.order .row form textarea {
+.order .row form textarea, select {
   padding: 1rem;
   margin: 1rem 0;
   font-size: 1.7rem;
@@ -509,6 +509,7 @@ header .navbar a:hover {
 .loader-container.fade-out {
   top: -120%;
 }
+
 
 
 

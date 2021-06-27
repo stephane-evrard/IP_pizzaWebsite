@@ -33,7 +33,7 @@
             <a href="#popular">popular</a>
             <a href="#gallery">gallery</a>
             <a href="#review">review</a>
-            <a href="#order">order</a>
+            <a href="#form">order</a>
         </nav>
 
     </header>
@@ -49,7 +49,7 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas accusamus tempore temporibus rem amet
                 laudantium animi optio voluptatum. Natus obcaecati unde porro nostrum ipsam itaque impedit incidunt rem
                 quisquam eos!</p>
-            <a href="#" class="btn">order now</a>
+            <a href="#order" class="btn">order now</a>
         </div>
 
         <div class="image">
@@ -406,19 +406,50 @@
                 <img src="images/waiter_pizza.jpg" alt="">
             </div>
 
-            <form id="form" action="">
+            <form  method="GET" id="register-form" name="pizzaForm" onsubmit="return pizzaFunction()">
 
                 <div class="inputBox">
-                    <input id="name" type="text" placeholder="name">
-                    <input id="email" type="email" placeholder="email">
+                    <input id="fullName" name="fullName" type="text" placeholder="Full name">
+                    <input id="email" name="email" type="email" placeholder="Email">
                 </div>
 
                 <div class="inputBox">
-                    <input id="number" type="number" placeholder="number">
-                    <input id="food_name" type="text" placeholder="food name">
+                    <input id="phoneNumber" name="phoneNumber" type="text" placeholder="Phone Number">
+                    <select id="pizzaName" name="pizzaName">
+                        <option value="">Select a pizza</option>
+                        <option value="Beef Pepperoni Plus">Beef Pepperoni Plus</option>
+                        <option value="Spicy Boerewors">Spicy Boerewors</option>
+                        <option value="Meat Deluxe">Meat Deluxe</option>
+                        <option value="Roast Veg & Feta">Roast Veg & Feta</option>
+                    </select>
                 </div>
 
-                <textarea id="address" placeholder="address" name="" id="" cols="30" rows="10"></textarea>
+                <div class="inputBox">
+                    <select id="pizzaSize" name="pizzaSize">
+                        <option value="">Select pizza size</option>
+                        <option value="500">Small</option>
+                        <option value="1000">Medium</option>
+                        <option value="1500">Large</option>
+                    </select>
+                    <select id="pizzaCrust" name="pizzaCrust">
+                        <option value="">Select crust</option>
+                        <option value="150">Crispy</option>
+                        <option value="200">Stuffed</option>
+                        <option value="300">Gluten-free</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <select id="pizzaTopping" name="pizzaTopping">
+                        <option value="">Select topping</option>
+                        <option value="50">Tomato</option>
+                        <option value="75">Chily</option>
+                        <option value="130">Mais</option>
+                        <option value="250">Beccon</option>
+                    </select>
+                    <input id="pizzaNumber" name="pizzaNumber" type="number" placeholder="Pizza number">
+                </div>
+                
+                <textarea id="address" placeholder="Address" name="address" cols="30" rows="10"></textarea>
 
                 <input type="submit" value="order now" class="btn">
 
@@ -447,7 +478,7 @@
     </section>
 
     <!-- scroll top button  -->
-    <a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+    <a href="#home" class="fas fa-angle-up" id="scroll-top"></a> 
 
     <!-- loader  -->
     <div class="loader-container">
@@ -458,6 +489,11 @@
 
 
     <!--Bootstrap cdn-->
+
+    <!-- for validation -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
